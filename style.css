@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    background: linear-gradient(45deg, #eaff97,rgb(255, 150, 80));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 450px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    background: transparent;
+    border-radius: 5px;
+}
+    
+.quadro {
+    height: 120px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 5px;   
+    color: #222;
+    background-color: rgba(180,180,180, .4);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.quadro span {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.quadro span.tempo {
+    font-size: 18px;
+}

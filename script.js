@@ -16,3 +16,10 @@ const relogio = setInterval(function time() {
     minutos.textContent = minute;
     segundos.textContent = second;
 })
+
+const tema = document.getElementById('theme');
+const body = document.body;
+
+tema.onclick = function() {
+    body.classList.toggle('dark');
+}

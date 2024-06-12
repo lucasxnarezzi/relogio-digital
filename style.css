@@ -3,11 +3,11 @@ body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     height: 100vh;
-    background: linear-gradient(45deg, #eaff97,rgb(255, 150, 80));
     display: flex;
     justify-content: center;
+    background: linear-gradient(45deg,#eaff97,rgb(255, 150, 80));
     align-items: center;
-    }
+}
     
 .container {
     display: flex;
@@ -40,4 +40,32 @@ body {
 
 .quadro span.tempo {
     font-size: 18px;
+}
+
+#theme {
+    width: 60px;
+    height: 30px;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+#theme::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+}
+
+body.dark #theme::before {
+    transform: translateX(30px);
+}
+
+body.dark {
+    background: linear-gradient(45deg,#28375c, #09091b);
 }

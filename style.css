@@ -5,8 +5,9 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(45deg,#eaff97,rgb(255, 150, 80));
+    background: linear-gradient(45deg,#f5ff82,rgb(255, 46, 35));
     align-items: center;
+    position: relative;
 }
     
 .container {
@@ -15,7 +16,7 @@ body {
     justify-content: space-around;
     height: 150px;
     width: 450px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
     background: transparent;
     border-radius: 5px;
 }
@@ -30,7 +31,7 @@ body {
     border-radius: 5px;   
     color: #222;
     background-color: rgba(180,180,180, .4);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
 }
 
 .quadro span {
@@ -43,12 +44,18 @@ body {
 }
 
 #theme {
+    display: flex;
+    justify-content: end;
+    align-items: end;
     width: 60px;
     height: 30px;
-    border: 5px solid #fff;
+    border: 5px solid #aaa;
     border-radius: 50px;
     position: relative;
     cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 #theme::before {
@@ -60,12 +67,26 @@ body {
     border-radius: 50%;
     left: 5px;
     top: 5px;
+    transition: 1s;
 }
 
 body.dark #theme::before {
     transform: translateX(30px);
+    background-color: #222;
+    transition: 1s;
 }
 
 body.dark {
-    background: linear-gradient(45deg,#28375c, #09091b);
+    background: linear-gradient(45deg,#3e44a3, #000015);
 }
+
+#diaAtual{
+    font-size: 26px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+
